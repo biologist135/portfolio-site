@@ -53,22 +53,48 @@ footer {
   color: white;
   margin-top: 20px;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .carousel-container {
   position: relative;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  overflow: visible;
+  padding: 0 70px;
 }
 
 .carousel-track {
-  position: relative;
+  width: 100%;
 }
 
-.slide {
+.project-card {
+  width: 100%;
   display: none;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.slide.active {
+.project-card.active {
   display: block;
 }
 
@@ -86,16 +112,12 @@ footer {
   z-index: 10;
 }
 
-.carousel-btn:hover {
-  background: #444;
-}
-
 .prev {
-  left: -60px;
+  left: 0;
 }
 
 .next {
-  right: -60px;
+  right: 0;
 }
 
 .carousel-dots {
