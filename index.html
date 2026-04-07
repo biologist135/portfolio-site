@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Benjamin's Programming Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Benjamin's Programming Portfolio</h1>
+
+
+    <nav>
+
+      <a href="#about">About</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+
+
+  <section id="about">
+
+    <h2>About This Website</h2>
+
+    <p>
+
+     Welcome to Benjamin's Programming Portfolio. I am a professional training specialist working to expand my skills in software development. 
+     This website will be a collection of all of my projects that I work on throughout my course work at Colorado State University Global.
+     As I complete more courses I will continue to expand my projects collection as part of a well rounded portfolio. I will also be working on independent projects that will be included in the portfolio as well
+     If you have any questions, please reach out.
+
+    </p>
+
+  </section>
+
+
+
+  <section id="projects">
+  <h2>Software Development 1 Projects</h2>
+
+  <div class="carousel-container">
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+    <div class="carousel-track">
+      <div class="project-card slide active">
+        <h3>Character Creation</h3>
+        <p><strong>Assignment:</strong> Module 1 Critical Thinking Activity</p>
+        <p><strong>Technologies:</strong> Java, Eclipse IDE</p>
+        <p>
+          A console-based program that collects user input to build a custom character profile.
+          The application prompts the user for various attributes, stores the responses in variables,
+          and outputs a structured summary of the completed character.
+        </p>
+        <p><strong>Key Skills Developed:</strong></p>
+        <ul>
+          <li>User input handling with Scanner</li>
+          <li>Variable assignment and data organization</li>
+          <li>Designing user-friendly prompts and output</li>
+        </ul>
+        <p>
+          <a href="https://github.com/biologist135/SoftwareDevelopment1/blob/main/Character.java" target="_blank">
+            View Source Code
+          </a>
+        </p>
+      </div>
+
+      <div class="project-card slide">
+        <h3>Calculate Average Withholdings</h3>
+        <p><strong>Assignment:</strong> Module 3 Critical Thinking Activity</p>
+        <p><strong>Technologies:</strong> Java, Eclipse IDE</p>
+        <p>
+          A financial calculation program that determines income tax withholdings based on
+          user-provided income. The program applies different percentage rates depending on
+          income brackets using conditional logic.
+        </p>
+        <p><strong>Key Skills Developed:</strong></p>
+        <ul>
+          <li>Conditional logic using if / else-if / else structures</li>
+          <li>Input validation and error handling</li>
+          <li>Implementing rule-based business logic</li>
+        </ul>
+        <p>
+          <a href="https://github.com/biologist135/SoftwareDevelopment1/blob/main/CalculateAverageWithholdings.java" target="_blank">
+            View Source Code
+          </a>
+        </p>
+      </div>
+
+      <div class="project-card slide">
+        <h3>Grade Statistics</h3>
+        <p><strong>Assignment:</strong> Module 4 Critical Thinking Activity</p>
+        <p><strong>Technologies:</strong> Java, Eclipse IDE</p>
+        <p>
+          A data-processing program that collects a set of student grades and calculates
+          statistical values including average, minimum, and maximum scores.
+        </p>
+        <p><strong>Key Skills Developed:</strong></p>
+        <ul>
+          <li>Looping structures (for, while, do-while)</li>
+          <li>Iterating through datasets</li>
+          <li>Performing aggregate calculations</li>
+        </ul>
+        <p>
+          <a href="https://github.com/biologist135/SoftwareDevelopment1/blob/main/gradeStatistics.java" target="_blank">
+            View Source Code
+          </a>
+        </p>
+      </div>
+
+      <div class="project-card slide">
+        <h3>Get Monthly Temperatures</h3>
+        <p><strong>Assignment:</strong> Module 5 Critical Thinking Activity</p>
+        <p><strong>Technologies:</strong> Java, Eclipse IDE</p>
+        <p>
+          A program that uses parallel arrays to store months and their corresponding
+          temperature data. The application outputs all values and calculates summary
+          statistics including average, highest, and lowest temperatures.
+        </p>
+        <p><strong>Key Skills Developed:</strong></p>
+        <ul>
+          <li>Working with arrays and indexed data</li>
+          <li>Loop-based data processing</li>
+          <li>Calculating summary statistics</li>
+        </ul>
+        <p>
+          <a href="https://github.com/biologist135/SoftwareDevelopment1/blob/main/GetMonthlyTemperatures.java" target="_blank">
+            View Source Code
+          </a>
+        </p>
+      </div>
+
+      <div class="project-card slide">
+        <h3>Home Inventory</h3>
+        <p><strong>Assignment:</strong> Module 8 Portfolio Project</p>
+        <p><strong>Technologies:</strong> Java, Eclipse IDE</p>
+        <p>
+          A multi-class object-oriented application that manages a home inventory system.
+          Users can add, remove, and update items, and save inventory data to a file.
+        </p>
+        <p><strong>Key Skills Developed:</strong></p>
+        <ul>
+          <li>Object-oriented programming</li>
+          <li>Managing collections with ArrayList</li>
+          <li>Building multi-class applications</li>
+          <li>File handling and data persistence</li>
+        </ul>
+        <p>
+          <a href="https://github.com/biologist135/SoftwareDevelopment1/tree/main/HomeInventory" target="_blank">
+            View Source Code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+  <div class="carousel-dots">
+    <span class="dot active-dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</section>
+
+
+
+  <section id="skills">
+
+    <h2>Skills Learned</h2>
+    <h3>Software Development 1</h3>
+
+    <ul>
+
+      <li>Variables and data types</li>
+
+      <li>Methods and constructors</li>
+
+      <li>Classes and objects</li>
+
+      <li>Arrays and basic data organization</li>
+
+      <li>Debugging and testing</li>
+
+    </ul>
+
+  </section>
+
+
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: platt.benjamin.code@email.com</p>
+
+    <p>GitHub: <a href="https://github.com/biologist135">My GitHub Profile</a>
+
+  </section>
+
+
+
+  <footer>
+
+    <p>© 2026 Benjamin Platt</p>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
